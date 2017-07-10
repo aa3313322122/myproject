@@ -1,7 +1,6 @@
 package com.naruto.controller;
 
 import com.naruto.kafka.TestKafkaProducer;
-import com.naruto.redis.RedisProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

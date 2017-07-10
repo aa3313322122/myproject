@@ -12,13 +12,6 @@ import org.springframework.stereotype.Component;
 @Component
 public class TestKafkaConsumer {
 
-    private final KafkaTemplate kafkaTemplate;
-
-    @Autowired
-    public TestKafkaConsumer(KafkaTemplate kafkaTemplate) {
-        this.kafkaTemplate = kafkaTemplate;
-    }
-
     @KafkaListener(topics = KafkaConstants.TEST_TOPIC)
     public void processMessage(String content) {
         Gson gson = new Gson();
