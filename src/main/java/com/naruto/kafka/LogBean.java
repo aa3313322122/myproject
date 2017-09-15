@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 /**
  * Created by yue.yuan on 2017/4/17.
  */
-@Component
+@Component("logBean2")
 public class LogBean {
 
     private String name;//操作员
